@@ -63,6 +63,9 @@ embeddings_model = OpenAIEmbeddings(
 )
 
 #Chroma DB
+import chromadb
+chromadb.api.client.SharedSystemClient.clear_system_cache()
+
 db = Chroma.from_documents(texts, embeddings_model)
 
 #User Input
