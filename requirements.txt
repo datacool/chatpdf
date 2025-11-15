@@ -7,6 +7,7 @@ langchain-chroma
 pypdf
 python-dotenv
 pysqlite3-binary
+protobuf~=3.19.0
 anaconda==0.0.1.1
 annotated-types==0.7.0
 anyio==4.11.0
