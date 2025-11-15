@@ -1,3 +1,12 @@
+streamlit
+langchain
+langchain-core
+langchain-community
+langchain-openai==1.0.0
+langchain-chroma
+pypdf
+python-dotenv
+pysqlite3-binary
 anaconda==0.0.1.1
 annotated-types==0.7.0
 anyio==4.11.0
@@ -36,3 +45,4 @@ typing-inspection==0.4.2
 typing_extensions==4.15.0
 xxhash==3.6.0
 zstandard==0.25.0
+
