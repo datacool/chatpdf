@@ -16,6 +16,7 @@ import pandas as pd
 import tempfile
 import os
 from io import StringIO
+from streamlit_extras.buyme_me_a_coffee import button
 
 from dotenv import load_dotenv
 from pathlib import Path
@@ -25,6 +26,11 @@ load_dotenv(dotenv_path=env_path)
 
 st.title("ChatPDF")
 st.write("---")
+
+#Buy me a coffee button
+button(username="kesug", coffee_url="https://www.buymeacoffee.com/kesug", floating=True, width=221)
+#OpenAI 키 입력받기
+#openai_key = st.text_input("OPENAI_API_KEY", type="password")
 
 uploaded_file = st.file_uploader("Upload PDF", type="pdf")
 st.write("---")
@@ -59,7 +65,7 @@ if uploaded_file is not None:
     #Embedding
     embeddings_model = OpenAIEmbeddings(
         model="text-embedding-3-large",
-        
+        #openai_api_key=openai_key        
     )
 
     #Chroma DB
