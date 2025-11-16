@@ -16,7 +16,7 @@ import pandas as pd
 import tempfile
 import os
 from io import StringIO
-from streamlit_extras.buyme_me_a_coffee import button
+from streamlit_extras.buy_me_a_coffee import button
 
 from dotenv import load_dotenv
 from pathlib import Path
@@ -28,7 +28,7 @@ st.title("ChatPDF")
 st.write("---")
 
 #Buy me a coffee button
-button(username="kesug", coffee_url="https://www.buymeacoffee.com/kesug", floating=True, width=221)
+button(username="kesug", floating=True, width=221)
 #OpenAI 키 입력받기
 #openai_key = st.text_input("OPENAI_API_KEY", type="password")
 
